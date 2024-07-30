@@ -11,14 +11,14 @@ const config: ThemeConfig = {
   initialColorMode: "dark",
   useSystemColorMode: true,
 };
-const styles = {
-  global: (props: any) => ({
-    body: {
-      color: mode('gray.800', 'whiteAlpha.900')(props),
-      bg: mode('#040404', '#141214')(props),
-    },
-  }),
-};
+// const styles = {
+//   global: (props: any) => ({
+//     body: {
+//       color: mode('gray.800', 'whiteAlpha.900')(props),
+//       bg: mode('#040404', '#141214')(props),
+//     },
+//   }),
+// };
 const components = {
   Drawer: {
     // setup light/dark mode component defaults

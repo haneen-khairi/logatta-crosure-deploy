@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+body{
+    padding-bottom: 52px;
+}
+.m-auto{
+    margin: 0 auto;
+}
+.button_tags{
+    font-family: Poppins;
+    font-size: 10px !important;
+    font-weight: 500 !important;
+    line-height: 20px !important;
+    letter-spacing: 0em;
+    text-align: center;
+    padding: 4px 20px;
+    background: linear-gradient(0deg, #E9D8FD, #E9D8FD),
+    linear-gradient(0deg, #0000001f, rgba(0, 0, 0, 0.12)) !important;
+    border: 1px solid #0000001F !important;
+    /* color: var(--purple-800, #44337A); */
+    color: #040404 !important;
+    border-radius: 24px !important;
+}
+.searcharea__header{
+    text-align: center;
+    margin-top: 12px;
+    color: #1D1D1B;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: normal;
+}
+.searcharea__paragraph{
+    color: #000;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 10px !important;
+    font-style: normal;
+    font-weight: 400;
+    margin: 16px 0;
+    line-height: normal;
+    letter-spacing: 0.4px;
+    opacity: 0.3;
+}
+.select__menu{
+    width: 100%;
+}
+.select__menu--data > div{
+    border-radius: 24px;
+    border: 1px solid  #E2E8F0;
+    background-color:  #FFF;
+}
+.form_search{
+    width: 40vw;
+}
+.summary_box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.grid-inputs{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 equal columns */
+    gap: 10px; /* Adjust the gap between items as needed */
+}
+@media screen and (max-width: 660px) {
+    .grid-inputs{
+        grid-template-columns: 1fr; /* 1 column for smaller screens */
+    }
+    .summary_box{
+        display: block;
+    }
+    .grid-column-select{
+        grid-column: span 2 /span 2;
+        margin-bottom: 12px;
+    }
+    .box-layout{
+        padding: 30px !important;
+    }
+    .order1{
+        order: 1;
+    }
+    .order2{
+        order: 2;
+    }
+    .PopoverContent {
+        width: 100%;
+        min-width: 80%;
+        max-width: 80%;
+    }
+    .chakra-popover__popper{
+        /* inset: unset !important; */
+        left: calc(30px + 1.25rem);
+        max-width: 70vw;
+    }
+}
+.chakra-input__group{ 
+    isolation: unset !important;
+}
